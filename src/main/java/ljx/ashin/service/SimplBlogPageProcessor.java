@@ -52,6 +52,7 @@ public class SimplBlogPageProcessor implements PageProcessor {
     public static void main(String[] args) {
         Spider.create(new SimplBlogPageProcessor())
                 .addUrl("http://blog.sina.com.cn/s/articlelist_1487828712_0_1.html")
-                .addPipeline(new BlogPipeline()).run();
+                .addPipeline(new BlogPipeline())
+                .thread(30).run();
     }
 }

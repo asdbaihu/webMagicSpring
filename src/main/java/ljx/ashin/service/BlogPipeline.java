@@ -6,6 +6,7 @@ import us.codecraft.webmagic.pipeline.Pipeline;
 import us.codecraft.webmagic.selector.Selectable;
 import us.codecraft.webmagic.selector.Selector;
 
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -18,6 +19,7 @@ public class BlogPipeline implements Pipeline {
         System.out.println("标题为:"+resultItems.get("title"));
         System.out.println("日期为:"+resultItems.get("editTime"));
         System.out.println("内容为:"+resultItems.get("content"));
+        System.out.println(new Date());
         /*for (Map.Entry<String,Object> entry: resultItems.getAll().entrySet()){
             System.out.println("key值:"+entry.getKey());
 
